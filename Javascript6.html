@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function myfun0()
+        {
+            var a=parseInt(document.getElementById("num1").value);
+            var b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML=a+b;
+        }
+        function myfun1()
+        {
+            var a=parseInt(document.getElementById("num1").value);
+            var b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML=a-b;
+        }
+        function myfun2()
+        {
+            var a=parseInt(document.getElementById("num1").value);
+            var b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML=a*b;
+        }       
+        function myfun3()
+        {
+            var a=parseInt(document.getElementById("num1").value);
+            var b=parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML=a/b;
+        }
+        function clear()
+    {   
+        document.getElementById("reset").reset();
+    }
+
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+    <b>1st number:</b>
+    <input type="number"  value="" id="num1"><br><br>
+    <b>2nd number:</b>
+    <input type="number"  value="" id="num2"><br><br>
+    <input type="button"   value="+" onclick="return myfun0()"><hr>
+
+    <input type="button"  value="-" onclick="return myfun1()"><br>
+    <hr>
+    <input type="button"  value="*" onclick="return myfun2()"><hr>
+
+    <input type="button"   value="/" onclick="return myfun3()"><br><hr>
+    <b>The Result Is:</b> <br>
+    <hr>
+    
+    <span id="result"></span>
+    
+</html>
